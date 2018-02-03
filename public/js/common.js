@@ -95,6 +95,7 @@ $(document).ready(function () {
         if (phone.indexOf("_") !== -1 || !!phone === false) return false;
 
         var data = form.serialize();
+        var rtype = form.find('[name=rtype]').val();
         var ltype = form.find('[name=ltype]').val();
         
         if (ltype === 'Рассчитать стоимость') {
@@ -102,21 +103,24 @@ $(document).ready(function () {
         }
 
         $.ajax({
-        	url: "js/mail.php",
+        	url: "/request",
         	type: "post",
         	data: data,
-        	success: function() {
-                dataLayer.push({'event': 'formSubmit'});
-                leadCollect(data);
-                if (ltype === 'Скачать прайс') {
-                    $.ajax({
-                        url: 'download.php',
-                        type: 'POST',
-                        success: function() {
-                            window.location = 'download.php';
-                        }
-                    });
-                }
+        	success: function(result) {
+                console.log(result)
+
+                //dataLayer.push({'event': 'formSubmit'});
+                //leadCollect(data);
+
+                // if (ltype === 'Скачать прайс') {
+                //     $.ajax({
+                //         url: 'download.php',
+                //         type: 'POST',
+                //         success: function() {
+                //             window.location = 'download.php';
+                //         }
+                //     });
+                // }
 
                 closePopup();
                 setTimeout(openPopup, 400, form.find('[name=thx]').val());
@@ -146,93 +150,93 @@ function closePopup() {
 
 function mapInit() {
 	map = new ymaps.Map("map", {
-		center: [59.939095, 30.315868],
-		zoom: 10,
+		center: [42.323798, 69.596060],
+		zoom: 12,
 		controls: ["zoomControl"],
 		behaviors: ["drag"]
 	});
 
-	placemark = new ymaps.Placemark([59.913144, 30.449996], {
-		hintContent: "Ул. Коллонтай",
-		balloonContent: "ЖК Аврора"
+	placemark = new ymaps.Placemark([42.317966, 69.600276], {
+		hintContent: "пр. Тауке хана, 33А",
+		balloonContent: ""
 	});
     map.geoObjects.add(placemark);
 
-    placemark = new ymaps.Placemark([59.902149, 30.475472], {
-        hintContent: "Ул. Дыбенко",
-        balloonContent: "ЖК Дом на Дыбенко"
+    placemark = new ymaps.Placemark([42.323141, 69.602121], {
+        hintContent: "ул. Желтоксан, 47",
+        balloonContent: ""
     });
 	map.geoObjects.add(placemark);
 
-    placemark = new ymaps.Placemark([59.909224, 30.458494], {
-        hintContent: "Ул. Подвойского",
-        balloonContent: "ЖК Невский эталон"
+    placemark = new ymaps.Placemark([42.317265, 69.614674], {
+        hintContent: "ул. Иляева, 111",
+        balloonContent: ""
     });
     map.geoObjects.add(placemark);
 
-    placemark = new ymaps.Placemark([59.904708, 30.313685], {
-        hintContent: "Московский пр.",
-        balloonContent: "ЖК Времена года"
+    placemark = new ymaps.Placemark([42.316612, 69.580213], {
+        hintContent: "пр. Республика, 10",
+        balloonContent: ""
     });
     map.geoObjects.add(placemark);
 
-    placemark = new ymaps.Placemark([60.075263, 30.336170], {
-        hintContent: "ул. Михаила Дудина",
-        balloonContent: "ЖК Северная долина"
+    placemark = new ymaps.Placemark([42.329325, 69.601828], {
+        hintContent: "пр. Кунаева, 10",
+        balloonContent: ""
     });
     map.geoObjects.add(placemark);
 
-    placemark = new ymaps.Placemark([60.031553, 30.142947], {
-        hintContent: "Юнтоловский пр.",
-        balloonContent: "ЖК Юнтолово"
+    placemark = new ymaps.Placemark([42.360851, 69.612940], {
+        hintContent: "ул. Корикты, 9",
+        balloonContent: ""
     });
     map.geoObjects.add(placemark);
 
-    placemark = new ymaps.Placemark([59.842599, 30.305906], {
-        hintContent: "1-й Предпортовый пр.",
-        balloonContent: "ЖК Перемена"
+    placemark = new ymaps.Placemark([42.357837, 69.623251], {
+        hintContent: "микрорайон Нурсат-1, 125",
+        balloonContent: ""
     });
     map.geoObjects.add(placemark);
 
-    placemark = new ymaps.Placemark([59.861905, 30.453724], {
-        hintContent: "пр. Александровской Фермы",
-        balloonContent: "ЖК Green City"
+    placemark = new ymaps.Placemark([42.355180, 69.635008], {
+        hintContent: "ул. Аргынбекова",
+        balloonContent: ""
     });
     map.geoObjects.add(placemark);
 
-    placemark = new ymaps.Placemark([60.004303, 30.402969], {
-        hintContent: "ул. Бутлерова",
-        balloonContent: "ЖК Академ-Парк"
+    placemark = new ymaps.Placemark([42.367585, 69.591073], {
+        hintContent: "микрорайон Самал-2",
+        balloonContent: ""
     });
     map.geoObjects.add(placemark);
 
-    placemark = new ymaps.Placemark([60.043808, 30.370764], {
-        hintContent: "Актёрский пр.",
-        balloonContent: "ЖК Актёрский Олимп"
+    placemark = new ymaps.Placemark([42.363368, 69.572666], {
+        hintContent: "микрорайон Шугыла",
+        balloonContent: ""
     });
     map.geoObjects.add(placemark);
 };
 
 function setCID() {
-        if(ga!=undefined){
+    if(ga!=undefined) {
         var tracker = ga.getAll()[0];
         var cid = tracker.get('clientId');
         $('.cid').each(function(index, el) {
-                $(el).val(cid);
+            $(el).val(cid);
         });
-        }
+    }
 }
 
 function getUrlVars() {
-        var vars = [], hash;
-        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-                for(var i = 0; i < hashes.length; i++)
-                {
-                        hash = hashes[i].split('=');
-                        vars.push(hash[0]);
-                        vars[hash[0]] = hash[1];
-                }
-        return vars;
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
 }
 
 
@@ -249,12 +253,12 @@ function utm_form(){
 }
 
 function leadCollect(data) {
-        //var data = $(form).serialize();
-        $.ajax({
-                type: "post",
-                url: "js/lead-collect.php",
-                data: data,
-                success: function() {}
-        });
-        return false;
+    //var data = $(form).serialize();
+    $.ajax({
+        type: "post",
+        url: "/lead-collect",
+        data: data,
+        success: function() {}
+    });
+    return false;
 }

@@ -60,6 +60,9 @@ return [
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
+    // emails reciever
+    'to' => env('MAIL_TO', 'be_clever@mail.ru'),
+
     /*
     |--------------------------------------------------------------------------
     | E-Mail Encryption Protocol

@@ -1,5 +1,9 @@
 <?php
 
+use App\Mail\RequestRegistered;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +17,11 @@
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::post('/request', function(Request $request) {
+	$input = $request->all();
+	// return $input;
+	
+	Mail::to(config('mail.to'))->send(new RequestRegistered($input));
 });

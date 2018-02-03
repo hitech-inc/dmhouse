@@ -36,7 +36,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </a>
 
             <div class="header__contact">
-                <a href="tel:+78122431187" class="header__phone">+7 (812) 243-11-87</a>
+                <a href="tel:+78122431187" class="header__phone">+7 (775) 273-45-38</a>
                 <span>Будем рады Вашему звонку</span>
             </div>
         </div>
@@ -51,7 +51,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <p class="home__subtitle">точно в срок с гарантией 18 месяцев</p>
                 </div>
 
-                <form class="home__calc">
+                <form class="home__calc" action="/request" method="POST">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="rtype" value="calculator">
+                    <input type="hidden" name="ltype" value="Запрос на калькуляцию">
+                    <input type="hidden" name="thx" value="#thx1">
+
                     <h3 class="home__ttl">Рассчитайте<br> точную стоимость ремонта</h3>
                     <select name="object_type">
                         <option></option>
@@ -86,7 +91,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
         <div class="why">
-            <h2 class="why__title">Почему ремонт лучше заказывать<br>в компании «СтройДом»?</h2>
+            <h2 class="why__title">Почему ремонт лучше заказывать<br>в компании «Dream House»?</h2>
             <div class="wrapper">
                 <div class="why__item"><img src="/img/icon-01.png" alt="">
                     <h4 class="why__ttl">Точные сроки</h4>
@@ -124,8 +129,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="call">
             <div class="wrapper">
                 <h2 class="call__title">Закажите замер с просчетом 3 вариантов смет - это бесплатно!</h2>
-                <form class="call__form">
-                    <input type="hidden" name="ltype" value="Заказать замер">
+                <form class="call__form" action="/request" method="POST">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="rtype" value="zamer">
+                    <input type="hidden" name="ltype" value="Запрос на замер">
                     <input type="hidden" name="thx" value="#thx1">
                     <input type="tel" name="phone" placeholder="+7 (___) ___-__-__">
                     <button class="btn" type="submit">Заказать замер</button>
@@ -152,7 +159,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a href="/img/photo/1/4.JPG" class="zoom" data-fancybox="gallery_1"></a>
                         <a href="/img/photo/1/5.JPG" class="zoom" data-fancybox="gallery_1"></a>
 
-                        <span class="quality__address">Улица Белышева</span>
+                        <span class="quality__address">Проспект Тауке-Хана</span>
                     </div>
                     <div class="quality__item">
                         <a href="/img/photo/2/1.JPG" class="zoom" data-fancybox="gallery_2"><div class="quality__border"><img src="/img/photo/2.png" alt=""></div></a>
@@ -164,7 +171,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a href="/img/photo/2/7.JPG" class="zoom" data-fancybox="gallery_2"></a>
                         <a href="/img/photo/2/8.JPG" class="zoom" data-fancybox="gallery_2"></a>
 
-                        <span class="quality__address">Улица Коллонтай</span>
+                        <span class="quality__address">Улица Байтурсынова</span>
                     </div>
                     <div class="quality__item">
                         <a href="/img/photo/3/1.JPG" class="zoom" data-fancybox="gallery_3"><div class="quality__border"><img src="/img/photo/3.png" alt=""></div></a>
@@ -186,7 +193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a href="/img/photo/3/17.JPG" class="zoom" data-fancybox="gallery_3"></a>
                         <a href="/img/photo/3/18.JPG" class="zoom" data-fancybox="gallery_3"></a>
 
-                        <span class="quality__address">Улица Горская</span>
+                        <span class="quality__address">Микрорайон Нурсат</span>
                     </div>
                     <div class="quality__item">
                         <a href="/img/photo/4/1.JPG" class="zoom" data-fancybox="gallery_4"><div class="quality__border"><img src="/img/photo/4.png" alt=""></div></a>
@@ -201,7 +208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a href="/img/photo/4/10.JPG" class="zoom" data-fancybox="gallery_4"></a>
                         <a href="/img/photo/4/11.JPG" class="zoom" data-fancybox="gallery_4"></a>
 
-                        <span class="quality__address">Улица Наставников</span>
+                        <span class="quality__address">Проспект Республики</span>
                     </div>
                 </div>
 
@@ -219,7 +226,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <a href="/img/photo/5/9.JPG" class="zoom" data-fancybox="gallery_1"></a>
                             <a href="/img/photo/5/10.JPG" class="zoom" data-fancybox="gallery_1"></a>
 
-                            <span class="quality__address">Проспект Большевиков</span>
+                            <span class="quality__address">Улица Иляева</span>
                         </div>
                         <div class="quality__item">
                             <a href="/img/photo/6/1.JPG" class="zoom" data-fancybox="gallery_2"><div class="quality__border"><img src="/img/photo/6.png" alt=""></div></a>
@@ -232,7 +239,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <a href="/img/photo/6/8.JPG" class="zoom" data-fancybox="gallery_2"></a>
                             <a href="/img/photo/6/9.JPG" class="zoom" data-fancybox="gallery_2"></a>
 
-                            <span class="quality__address">19-я линия ВО</span>
+                            <span class="quality__address">Улица Желтоксан</span>
                         </div>
                         <!-- <div class="quality__item">
                             <a href="/img/photo/3/1.JPG" class="zoom" data-fancybox="gallery_3"><div class="quality__border"><img src="/img/photo/3.png" alt=""></div></a>
@@ -302,7 +309,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <h4 class="economy__ttl2">Плюсы</h4>
                         <ul class="economy__list">
                             <li class="economy__item">Низкая начальная стоимость услуг.</li>
-                            <li class="economy__item">Вам может повезти - и Вы найдете действительно классного специалиста.</li>
+                            <li class="economy__item">Вам может повезти - и Вы найдете действительно классного специалиста.</li>
                         </ul>
 
                         <h4 class="economy__ttl2">Минусы</h4>
@@ -438,7 +445,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="wrapper">
                 <h2 class="call__title">Сделайте свою жизнь комфортнее</h2>
                 <p class="call__subtitle">Закажите дизайн-проект для Вашей квартиры</p>
-                <form class="call__form">
+                <form class="call__form" action="/request" method="POST">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="rtype" value="design">
                     <input type="hidden" name="ltype" value="Заказать дизайн-проект">
                     <input type="hidden" name="thx" value="#thx1">
                     <input type="tel" name="phone" placeholder="+7 (___) ___-__-__">
@@ -488,7 +497,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h2 class="logos__title">Заказывая ремонт у нас, Вы экономите<br> на строительных материалах</h2>
                 <div class="logos__container">
                     <div class="logos__item"><img src="/img/logos/1.png" alt=""></div>
-                    <div class="logos__item"><img src="/img/logos/5.jpg" alt=""></div>
+                    <div class="logos__item"><img src="/img/logos/5.png" alt="" style="height: 120px"></div>
                     <div class="logos__item"><img src="/img/logos/2.png" alt=""></div>
                     <div class="logos__item"><img src="/img/logos/4.png" alt=""></div>
                     <div class="logos__item"><img src="/img/logos/3.png" alt=""></div>
@@ -497,7 +506,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <div class="tooltip__data">
                         <h3 class="tooltip__title">Почему Вы экономите, когда покупаете материалы через строительную компанию?</h3>
-                        <p class="tooltip__text">У нас есть скидки во всех магазинах, с которыми мы сотрудничаем - платиновая карта высшей лиги строительной базы «Петрович», максимальные скидочные карты «Максидома», «К-Рауты», «Метрики» и «Топ хауса».</p>
+                        <p class="tooltip__text">У нас есть скидки во всех магазинах, с которыми мы сотрудничаем, а также максимальные скидочные карты.</p>
                         <p class="tooltip__text">Кроме того, наши специалисты проконсультируют Вас, какие материалы лучше приобрести, чтобы не переплачивать за более дорогие аналоги. А за счет точно рассчитанной сметы Вы приобретете ровно столько материалов, сколько потребуется для Вашего ремонта.</p>
                     </div>
                 </div>
@@ -509,7 +518,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h2 class="price__title">ВЫПОЛНИМ РЕМОНТ ЛЮБОЙ СЛОЖНОСТИ</h2>
 
                 <div class="price__container">
-                    <img src="/img/magazine.png" alt="">
+                    <!-- <img src="/img/magazine.png" alt=""> -->
 
                     <ul class="price__list">
                         <li class="price__item">Демонтажные работы</li>
@@ -523,7 +532,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <li class="price__item">Сантехнические работы</li>
                         <li class="price__item">Закупка материалов</li>
                         <li class="price__item">Прочие работы</li>
-                        <li class="price__item"><a href="#download" class="popup-link btn">Скачать прайс-лист</a></li>
+                        <!-- <li class="price__item"><a href="#download" class="popup-link btn">Скачать прайс-лист</a></li> -->
                     </ul>
                 </div>
             </div>
@@ -544,25 +553,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <a href="/img/reviews/3.jpg" class="zoom"><img src="/img/reviews/3.jpg" alt=""></a>
                 </div>
 
-                <div class="reviews__vk owl-carousel">
+                <!-- <div class="reviews__vk owl-carousel">
                     <img src="/img/reviews/vk.png" alt="">
                     <img src="/img/reviews/vk-1.png" alt="">
                     <img src="/img/reviews/vk-2.png" alt="">
                     <img src="/img/reviews/vk-3.png" alt="">
                     <img src="/img/reviews/vk-4.png" alt="">
                     <img src="/img/reviews/vk-5.png" alt="">
-                </div>
+                </div> -->
             </div>
         </div>
 
         <div class="map">
-            <h2 class="map__title">Отремонтированные нами квартиры<br> можно найти по всему Санкт-Петербургу</h2>
+            <h2 class="map__title">Отремонтированные нами квартиры<br> можно найти по всему городу Шымкент</h2>
             <div id="map"></div>
         </div>
 
-        <div class="call">
+        <!-- <div class="call">
             <div class="wrapper">
-                <h2 class="call__title">Сейчас мы ремонтируем 17 квартир -<br>запишитесь на экскурсию в ближайшую к Вам</h2>
+                <h2 class="call__title">Сейчас мы ремонтируем 4 квартиры -<br>запишитесь на экскурсию в ближайшую к Вам</h2>
                 <form class="call__form">
                     <input type="hidden" name="ltype" value="Записаться на экскурсию">
                     <input type="hidden" name="thx" value="#thx1">
@@ -570,7 +579,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <button class="btn" type="submit">Записаться на экскурсию</button>
                 </form>
             </div>
-        </div>
+        </div> -->
 
         <!-- <div class="docs">
             <div class="wrapper">
@@ -591,11 +600,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div> -->
 
-        <div class="dir">
+        <!-- <div class="dir">
             <div class="wrapper">
-                <!-- <img src="/img/dir.png" alt=""> -->
+                <img src="/img/dir.png" alt="">
                 <div class="dir__recourse">
-                    <!-- <h2 class="dir__title">Обращение генерального<br> директора</h2>
+                    <h2 class="dir__title">Обращение генерального<br> директора</h2>
 
                     <p class="dir__text">Мы не всегда понимаем, какое важное значение в нашей жизни играет ремонт наших жилищ. А ведь именно дома мы проводим больше всего времени.</p>
                     <p class="dir__text">Плохой ремонт - это наше плохое настроение. Плохой сон, плохое самочувствие, плохое здоровье. Это наши нервы и наше время, которое мы тратим, чтобы привести квартиру в порядок.</p>
@@ -605,13 +614,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <img src="/img/sign.png" alt="" class="dir__sign">
 
-                    <p class="dir__name">Генеральный директор компании "СтройДом СПб"<br><b>Василенко Сергей Олегович</b></p> -->
+                    <p class="dir__name">Генеральный директор компании "СтройДом СПб"<br><b>Василенко Сергей Олегович</b></p> 
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <div class="why">
-            <h2 class="why__title">Почему ремонт лучше заказывать<br>в компании «СтройДом»?</h2>
+            <h2 class="why__title">Почему ремонт лучше заказывать<br>в компании «Dream House»?</h2>
             <div class="wrapper">
                 <div class="why__item"><img src="/img/icon-01.png" alt="">
                     <h4 class="why__ttl">Точные сроки</h4>
@@ -623,7 +632,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="why__item"><img src="/img/icon-03.png" alt="">
                     <h4 class="why__ttl">Высокое качество</h4>
-                    <p class="why__text">В наших бригадах - <br>только русские рабочие</p>
+                    <p class="why__text">В наших бригадах - <br>только специалисты</p>
                 </div>
                 <div class="why__item"><img src="/img/icon-04.png" alt="">
                     <h4 class="why__ttl">«Под ключ»</h4>
@@ -635,7 +644,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="call">
             <div class="wrapper">
                 <h2 class="call__title">Начать ремонт очень просто -<br> укажите Ваш номер телефона, и мы Вам перезвоним</h2>
-                <form class="call__form">
+                <form class="call__form" action="/request" method="POST">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="rtype" value="remont">
                     <input type="hidden" name="ltype" value="Начать ремонт">
                     <input type="hidden" name="thx" value="#thx1">
                     <input type="tel" name="phone" placeholder="+7 (___) ___-__-__">
@@ -652,14 +663,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="footer__info">
                 <p>
-                    ИП "Василенко", ИНН 471403206403, ОГРНИП<br>
-                    308471414300032,Санкт-Петербург,<br>
-                    пр. Каменноостровский, дом 37, оф. 635<br>
-                    Банковские реквизиты: ПАО АКБ «Авангард» Р/сч<br>
-                    40802810202100012341,Получатель: Василенко Сергей<br>
-                    Олегович (ИП),ИНН 7702021163 КПП 997950001 БИК<br>
-                    044525201, К/С 30101810000000000201Код ОКПО<br>
-                    29304028
+                    Компания "Dream House"<br>
+                    город Шымкент<br>
+                    микрорайн Нурсат, дом 13<br>
                 </p>
 
                 <!-- <a href="#policy" class="popup-link">Политика конфиденциальности</a> -->
@@ -667,7 +673,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <div class="footer__phone">
-                <a href="tel:+78122431187" class="footer__phone">+7 (812) 243-11-87</a><br>
+                <a href="tel:+77752734538" class="footer__phone">+7 (775) 273-45-38</a><br>
                 <span>Звоните, и мы ответим на все Ваши вопросы</span>
             </div>
 
@@ -686,11 +692,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="popup-wrapper">
     <div class="popup-container">
 
-        <div id="download" class="popup">
+        <!-- <div id="download" class="popup">
             <a href="#" class="close"></a>
 
             <div class="popup-inner">
-                <p class="popup__text">Введите ваш номер телефона,<br> и загрузка начнется через 7 секунд.<br> Мы перезвоним Вам,<br> если загрузка прервется.</p>
+                <p class="popup__text">Введите ваш номер телефона,<br>Мы перезвоним Вам!</p>
 
                 <form class="popup__form">
                     <input type="hidden" name="ltype" value="Скачать прайс">
@@ -699,15 +705,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <button type="submit" class="btn">Скачать прайс-лист</button>
                 </form>
             </div>
-        </div>
+        </div> -->
 
         <div id="calc" class="popup">
             <a href="#" class="close"></a>
 
             <div class="popup-inner">
-                <p class="popup__text">Укажите Ваш контактный телефон -<br>получите расчет стоимости Вашего<br> заказа в течение 2 минут</p>
+                <p class="popup__text">Укажите Ваш контактный телефон -<br>получите расчет стоимости Вашего<br> заказа в течение 5 минут</p>
 
-                <form class="popup__form">
+                <form class="popup__form" action="/request" method="POST">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="rtype" value="price">
                     <input type="hidden" name="ltype" value="Рассчитать стоимость">
                     <input type="hidden" name="thx" value="#thx1">
                     <input type="tel" name="phone" placeholder="+7 (___) ___-__-__">

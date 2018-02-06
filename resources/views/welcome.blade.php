@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="/css/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="/css/main.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <!-- Google Tag Manager -->
@@ -520,20 +521,81 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="price__container">
                     <!-- <img src="/img/magazine.png" alt=""> -->
 
-                    <ul class="price__list">
-                        <li class="price__item">Демонтажные работы</li>
-                        <li class="price__item">Малярные работы</li>
-                        <li class="price__item">Гипрочные работы</li>
-                        <li class="price__item">Ремонт полов, напольные покрытия</li>
-                        <li class="price__item">Кафельная плитка, керамогранит,<br> мозаика</li>
-                        <li class="price__item">Окна, откосы, подоконники</li>
-                        <li class="price__item">Двери, откосы дверей, проемы</li>
-                        <li class="price__item">Электромонтажные работы</li>
-                        <li class="price__item">Сантехнические работы</li>
-                        <li class="price__item">Закупка материалов</li>
-                        <li class="price__item">Прочие работы</li>
-                        <!-- <li class="price__item"><a href="#download" class="popup-link btn">Скачать прайс-лист</a></li> -->
-                    </ul>
+                    
+
+                    <div class="design__container remont">
+                        <div class="design__element ">
+                            <h2>Косметический ремонт</h2>
+                            <ul class="design__list">
+                                <li class="design__item">- Замена обоев;</li>
+                                <li class="design__item">- Покрытие пола;</li>
+                                <li class="design__item">- Замена плинтуса;</li>
+                                <li class="design__item">- Выравнивание откосов;</li>
+                                <li class="design__item">- Замена дверной коробки;</li>
+                                <li class="design__item">- Ремонт освещения;</li>
+                                <li class="design__item">- Уборка и вынос мусора;</li>
+                                <li class="design__item">
+                                    <a href="#calc" class="popup-link btn btn_dark">Рассчитать стоимость</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="design__element ">
+                            <h2>Капитальный ремонт</h2>
+                            <ul class="design__list">
+                                <li class="design__item">- Выравнивание стен;</li>
+                                <li class="design__item">- Выравнивание пола;</li>
+                                <li class="design__item">- Укладка ламината и т.д.;</li>
+                                <li class="design__item">- Устройство потолков;</li>
+                                <li class="design__item">- Демонтаж и устройство оконных и дверных проемов, перегородок;</li>
+                                <li class="design__item">- Монтаж электросетей, системы водоснабжения, систем отопления;</li>
+                                <li class="design__item">- Уборка и вынос мусора;</li>
+                                <li class="design__item">
+                                    <a href="#calc" class="popup-link btn btn_dark">Рассчитать стоимость</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="design__element ">
+                            <h2>Евро ремонт</h2>
+                            <ul class="design__list">
+                                <li class="design__item">- Выравнивание стен;</li>
+                                <li class="design__item">- Выравнивание пола;</li>
+                                <li class="design__item">- Укладка ламината и т.д.;</li>
+                                <li class="design__item">- Устройство потолков;</li>
+                                <li class="design__item">- Демонтаж и устройство оконных и дверных проемов, перегородок;</li>
+                                <li class="design__item">- Монтаж электросетей, системы водоснабжения, систем отопления;</li>
+                                <li class="design__item">- Уборка и вынос мусора;</li>
+                                <li class="design__item">- Эксклюзивные материалы;</li>
+                                <li class="design__item">- Нестандартные планировочные решения;</li>
+                                <li class="design__item">- Эксклюзивный дизайн-проект;</li>
+                                <li class="design__item">
+                                    <a href="#calc" class="popup-link btn btn_dark">Рассчитать стоимость</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="design__element ">
+                            <h2>Ремонт премиум класса</h2>
+                            <ul class="design__list">
+                                <li class="design__item">- Выравнивание стен;</li>
+                                <li class="design__item">- Выравнивание пола;</li>
+                                <li class="design__item">- Укладка ламината и т.д.;</li>
+                                <li class="design__item">- Устройство потолков;</li>
+                                <li class="design__item">- Демонтаж и устройство оконных и дверных проемов, перегородок;</li>
+                                <li class="design__item">- Монтаж электросетей, системы водоснабжения, систем отопления;</li>
+                                <li class="design__item">- Уборка и вынос мусора;</li>
+                                <li class="design__item">- Эксклюзивные материалы;</li>
+                                <li class="design__item">- Нестандартные планировочные решения;</li>
+                                <li class="design__item">- Установка аквариума, джакузи, сауны и т.д.;</li>
+                                <li class="design__item">- Система умный дом;</li>
+                                <li class="design__item">- Зимний сад;</li>
+                                <li class="design__item">- Художественная ковка;</li>
+                                <li class="design__item">- Укладка декоративного камня;</li>
+                                <li class="design__item">
+                                    <a href="#calc" class="popup-link btn btn_dark">Рассчитать стоимость</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -753,6 +815,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 
 <script type="text/javascript" src="/js/common.js"></script>
+
+
+<!-- RedHelper -->
+<script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async" 
+    src="https://web.redhelper.ru/service/main.js?c=dmhouse">
+</script> 
+<!--/Redhelper -->
+
+
 
 </body>
 </html>

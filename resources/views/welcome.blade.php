@@ -47,8 +47,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="home">
             <div class="wrapper">
                 <div class="home__container">
-                    <h1 class="home__title">Профессиональный<br>ремонт Вашей квартиры<br>«под ключ»</h1>
-                    <p class="home__subtitle">точно в срок с гарантией 18 месяцев</p>
+                    <h1 class="home__title">Профессиональный<br>ремонт Вашей квартиры,<br>дома, офиса «под ключ» в городе Шымкент</h1>
+                    <p class="home__subtitle">точно в срок с гарантией 12 месяцев</p>
                 </div>
 
                 <form class="home__calc" action="/request" method="POST">
@@ -99,7 +99,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="why__item"><img src="/img/icon-02.png" alt="">
                     <h4 class="why__ttl">Гарантия</h4>
-                    <p class="why__text">На все виды работ - <br>гарантия 18 месяцев</p>
+                    <p class="why__text">На все виды работ - <br>гарантия 12 месяцев</p>
                 </div>
                 <div class="why__item"><img src="/img/icon-03.png" alt="">
                     <h4 class="why__ttl">Высокое качество</h4>
@@ -128,7 +128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="call">
             <div class="wrapper">
-                <h2 class="call__title">Закажите замер с просчетом 3 вариантов смет - это бесплатно!</h2>
+                <h2 class="call__title">Закажите замер - это бесплатно!</h2>
                 <form class="call__form" action="/request" method="POST">
                     {{ csrf_field() }}
                     <input type="hidden" name="rtype" value="zamer">
@@ -196,17 +196,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <span class="quality__address">Микрорайон Нурсат</span>
                     </div>
                     <div class="quality__item">
-                        <a href="/img/photo/4/1.JPG" class="zoom" data-fancybox="gallery_4"><div class="quality__border"><img src="/img/photo/4.png" alt=""></div></a>
-                        <a href="/img/photo/4/2.JPG" class="zoom" data-fancybox="gallery_4"></a>
-                        <a href="/img/photo/4/3.JPG" class="zoom" data-fancybox="gallery_4"></a>
-                        <a href="/img/photo/4/4.JPG" class="zoom" data-fancybox="gallery_4"></a>
+                        <a href="/img/photo/res1.jpg" class="zoom" data-fancybox="gallery_4"><div class="quality__border"><img src="/img/photo/res1.jpg" alt="" style="width: 497px;"></div></a>
+                        <a href="/img/photo/res2.jpg" class="zoom" data-fancybox="gallery_4"></a>
+                        <a href="/img/photo/res3.jpg" class="zoom" data-fancybox="gallery_4"></a>
+                        <!-- <a href="/img/photo/4/4.JPG" class="zoom" data-fancybox="gallery_4"></a>
                         <a href="/img/photo/4/5.JPG" class="zoom" data-fancybox="gallery_4"></a>
                         <a href="/img/photo/4/6.JPG" class="zoom" data-fancybox="gallery_4"></a>
                         <a href="/img/photo/4/7.JPG" class="zoom" data-fancybox="gallery_4"></a>
                         <a href="/img/photo/4/8.JPG" class="zoom" data-fancybox="gallery_4"></a>
                         <a href="/img/photo/4/9.JPG" class="zoom" data-fancybox="gallery_4"></a>
                         <a href="/img/photo/4/10.JPG" class="zoom" data-fancybox="gallery_4"></a>
-                        <a href="/img/photo/4/11.JPG" class="zoom" data-fancybox="gallery_4"></a>
+                        <a href="/img/photo/4/11.JPG" class="zoom" data-fancybox="gallery_4"></a> -->
 
                         <span class="quality__address">Проспект Республики</span>
                     </div>
@@ -339,7 +339,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <li class="economy__item">Строгое соблюдение заявленных сроков. Возврат денег в случае их нарушения.</li>
                             <li class="economy__item">Всегда есть возможность заменить заболевшего работника - в компании не одна бригада.</li>
                             <li class="economy__item">За качество работ отвечает компания, Вам достаточно просто принять работу у мастера.</li>
-                            <li class="economy__item">Гарантия - 18 месяцев. Любые обнаруженные недочеты устраняются за счет компании.</li>
+                            <li class="economy__item">Гарантия - 12 месяцев. Любые обнаруженные недочеты устраняются за счет компании.</li>
                         </ul>
 
                         <h4 class="economy__ttl2">Минусы</h4>
@@ -581,24 +581,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div> -->
 
-        <!-- <div class="docs">
+        <div class="docs">
             <div class="wrapper">
-                <h2 class="docs__title">Мы работаем полностью официально<br> и строго по договору</h2>
+                <h2 class="docs__title">Мы имеем высшее строительное образование<br>и мы постоянно обучаемся для профессионального решения ваших задач</h2>
 
                 <div class="docs__container">
-                    <a href="/img/docs/1-zoom.png" class="docs__item zoom"><img src="/img/docs/1.png" alt=""></a>
-                    <a href="/img/docs/2-zoom.png" class="docs__item zoom"><img src="/img/docs/2.png" alt=""></a>
-                    <a href="/img/docs/3-zoom.png" class="docs__item zoom"><img src="/img/docs/3.png" alt=""></a>
+                    <a href="/img/docs/1.jpg" class="docs__item zoom"><img src="/img/docs/1.jpg" alt="" style="width: 300px"></a>
+                    <a href="/img/docs/2.jpg" class="docs__item zoom"><img src="/img/docs/2.jpg" alt="" style="width: 300px"></a>
+                    <a href="/img/docs/3.jpg" class="docs__item zoom"><img src="/img/docs/3.jpg" alt="" style="width: 300px"></a>
                 </div>
 
-                <div class="docs__sample">
+                <!-- <div class="docs__sample">
                     <a href="/img/docs/sample-1.png" class="zoom" data-fancybox="docs">Образец договора</a>
                     <a href="/img/docs/sample-2.png" class="zoom" data-fancybox="docs"></a>
                     <a href="/img/docs/sample-3.png" class="zoom" data-fancybox="docs"></a>
                     <a href="/img/docs/sample-4.png" class="zoom" data-fancybox="docs"></a>
-                </div>
+                </div> -->
             </div>
-        </div> -->
+        </div>
 
         <!-- <div class="dir">
             <div class="wrapper">
@@ -628,7 +628,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="why__item"><img src="/img/icon-02.png" alt="">
                     <h4 class="why__ttl">Гарантия</h4>
-                    <p class="why__text">На все виды работ - <br>гарантия 18 месяцев</p>
+                    <p class="why__text">На все виды работ - <br>гарантия 12 месяцев</p>
                 </div>
                 <div class="why__item"><img src="/img/icon-03.png" alt="">
                     <h4 class="why__ttl">Высокое качество</h4>

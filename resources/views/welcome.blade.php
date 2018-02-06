@@ -103,7 +103,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="why__item"><img src="/img/icon-03.png" alt="">
                     <h4 class="why__ttl">Высокое качество</h4>
-                    <p class="why__text">В наших бригадах - <br>только русские рабочие</p>
+                    <p class="why__text">В наших бригадах - <br>только профессионалы своего дела</p>
                 </div>
                 <div class="why__item"><img src="/img/icon-04.png" alt="">
                     <h4 class="why__ttl">«Под ключ»</h4>

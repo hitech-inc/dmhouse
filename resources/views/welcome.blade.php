@@ -824,6 +824,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!--/Redhelper -->
 
 
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-114185836-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
 
 </body>
 </html>
